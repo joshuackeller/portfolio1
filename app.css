@@ -1,33 +1,37 @@
-body {
-  margin: 0px;
-  padding: 0px;
-}
+
 * {
   font-family: garamond, verdana;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 p {
   font: garamond;
 }
-.after_nav {
+.page {
   padding: 10px;
   margin: 0px 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #header {
   font-size: 42px;
   background-color: #1AAEA8;
-  color: #FFB800;
+  color: #FFC632;
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
-  border: 3px solid #FFB800;
+  border: 3px solid #FFC632;
   width: 260px;
+  text-shadow: -2px 2px 0px #ffffff;
 }
 .nav_var {
   margin: 20px auto;
   margin-bottom: 0px;
   padding: 0px;
-  border-top: 3px solid #FFB800;
-  border-bottom: 3px solid #FFB800;
+  border-top: 3px solid #FFC632;
+  border-bottom: 3px solid #FFC632;
 }
  .nav_var ul {
   font-family: verdana;
@@ -45,17 +49,43 @@ p {
 
 .nav_var li a {
   display: block;
-  color: #FFB800;
+  color: #FFC632;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 .nav_var li a:hover {
   color: white;
 }
 
-.p1, .p2, .p3, .p4 {
-  border-bottom: 2px solid #1AAEA8;
+.item1, .item2, .item3, .item4 {
+  border: 2px solid #1AAEA8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 400px;
+  padding: 25px;
+  background-color: #FFD25D;
+  padding-top: 15px;
+
+}
+@media only screen and (max-width: 400px) {
+
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  .item1, .item2, .item3, .item4 {
+    border: 2px solid #1AAEA8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #FFD25D;
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
